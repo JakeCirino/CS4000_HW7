@@ -1,0 +1,4 @@
+target/classes/processed_tweets.txt
+target/classes/random_data.txt
+src/main/java/processed_tweets.txt
+src/main/java/random_data.txt

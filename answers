@@ -1,0 +1,24 @@
+Part 1:
+1. Semicolons missing from lines 70 and 72
+
+2. Line 84, the Job constructor used is deprecated. Proper implementation now is Job.getInstance(conf, "Secret Message");
+
+3. 
+processed_tweets.txt: 
+RealDWJ	1
+
+random_data.txt:
+RealAlonzoChurch	551
+
+4. "hdfs fsck random_data.txt -files -blocks" shows there are 34 blocks
+
+Part 2:
+1. Added the line "conf.set("Message", otherArgs[0]);" in main because it wasn't passing the secret message to the Mapper. Lines 98-100 changed the mapper/reducer class from Mapper.class and Reducer.class (which are the hadoop mapper/reducer) to our implemented mapper/reducer GeneralMapper.class and GeneralReducer.class
+
+2.
+random_data.txt: 0
+processed_tweets.txt: 19, AgathaGeraldine
+
+3.
+random_data.txt: 0
+processed_tweets.txt: 2, SistemKomputer
